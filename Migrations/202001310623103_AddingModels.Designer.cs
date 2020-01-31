@@ -7,13 +7,13 @@ namespace WeeChat.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class CreateUserTable : IMigrationMetadata
+    public sealed partial class AddingModels : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateUserTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddingModels));
         
         string IMigrationMetadata.Id
         {
-            get { return "202001300429231_CreateUserTable"; }
+            get { return "202001310623103_AddingModels"; }
         }
         
         string IMigrationMetadata.Source

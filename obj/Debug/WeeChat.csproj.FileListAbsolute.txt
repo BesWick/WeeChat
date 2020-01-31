@@ -107,4 +107,4 @@ C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.dll
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.pdb
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.InitialModel.resources
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.csproj.GenerateResource.cache
-C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.CreateUserTable.resources
+C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.AddingModels.resources

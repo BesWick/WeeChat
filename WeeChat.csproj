@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -177,9 +178,9 @@
     <Compile Include="Migrations\202001300249520_InitialModel.Designer.cs">
       <DependentUpon>202001300249520_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202001300429231_CreateUserTable.cs" />
-    <Compile Include="Migrations\202001300429231_CreateUserTable.Designer.cs">
-      <DependentUpon>202001300429231_CreateUserTable.cs</DependentUpon>
+    <Compile Include="Migrations\202001310623103_AddingModels.cs" />
+    <Compile Include="Migrations\202001310623103_AddingModels.Designer.cs">
+      <DependentUpon>202001310623103_AddingModels.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -246,9 +247,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Contacts\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -267,8 +270,8 @@
     <EmbeddedResource Include="Migrations\202001300249520_InitialModel.resx">
       <DependentUpon>202001300249520_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001300429231_CreateUserTable.resx">
-      <DependentUpon>202001300429231_CreateUserTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202001310623103_AddingModels.resx">
+      <DependentUpon>202001310623103_AddingModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

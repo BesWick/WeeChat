@@ -3,7 +3,7 @@ namespace WeeChat.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateUserTable : DbMigration
+    public partial class AddingModels : DbMigration
     {
         public override void Up()
         {
@@ -13,18 +13,18 @@ namespace WeeChat.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         DateCreated = c.DateTime(nullable: false),
-                        LoginUser_Id = c.String(maxLength: 128),
+                        WeeUser_Id = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.AspNetUsers", t => t.LoginUser_Id)
-                .Index(t => t.LoginUser_Id);
+                .ForeignKey("dbo.AspNetUsers", t => t.WeeUser_Id)
+                .Index(t => t.WeeUser_Id);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Users", "LoginUser_Id", "dbo.AspNetUsers");
-            DropIndex("dbo.Users", new[] { "LoginUser_Id" });
+            DropForeignKey("dbo.Users", "WeeUser_Id", "dbo.AspNetUsers");
+            DropIndex("dbo.Users", new[] { "WeeUser_Id" });
             DropTable("dbo.Users");
         }
     }
