@@ -5,7 +5,7 @@ namespace WeeChat.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<User> WeeUsers { get; set; }
+        public DbSet<UserProfile> WeeUsers { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

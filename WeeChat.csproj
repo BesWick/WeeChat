@@ -182,12 +182,24 @@
     <Compile Include="Migrations\202001310623103_AddingModels.Designer.cs">
       <DependentUpon>202001310623103_AddingModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001310700260_connectingusertable.cs" />
+    <Compile Include="Migrations\202001310700260_connectingusertable.Designer.cs">
+      <DependentUpon>202001310700260_connectingusertable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001311642156_newtable.cs" />
+    <Compile Include="Migrations\202001311642156_newtable.Designer.cs">
+      <DependentUpon>202001311642156_newtable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001311758373_changeUserTable.cs" />
+    <Compile Include="Migrations\202001311758373_changeUserTable.Designer.cs">
+      <DependentUpon>202001311758373_changeUserTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -272,6 +284,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001310623103_AddingModels.resx">
       <DependentUpon>202001310623103_AddingModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001310700260_connectingusertable.resx">
+      <DependentUpon>202001310700260_connectingusertable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001311642156_newtable.resx">
+      <DependentUpon>202001311642156_newtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001311758373_changeUserTable.resx">
+      <DependentUpon>202001311758373_changeUserTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -15,7 +15,7 @@ namespace WeeChat.Controllers
 
         public ActionResult List()
         {
-            var viewModel = _context.WeeUsers.Include(g => g.WeeUser);
+            var viewModel = _context.WeeUsers.Include(g => g.ScreenName);
 
             return View(viewModel);
         }

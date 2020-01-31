@@ -1,8 +1,16 @@
-﻿@model IEnumerable<WeeChat.Models.User>
+﻿@using WeeChat.Models
+@model IEnumerable<WeeChat.Models.UserProfile>
 @{
     ViewBag.Title = "List";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>ListA</h2>
+
+<ul>
+    @foreach (var user in Model)
+    {
+        <li></li>
+    }
+</ul>
 
