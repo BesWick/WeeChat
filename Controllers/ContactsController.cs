@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+﻿using System.Linq;
 using System.Web.Mvc;
 using WeeChat.Models;
 
@@ -13,10 +13,15 @@ namespace WeeChat.Controllers
             _context = new ApplicationDbContext();
         }
 
+        [Authorize]
         public ActionResult List()
         {
-            var viewModel = _context.WeeUsers.Include(g => g.ScreenName);
 
+            var currentUser = (Models.UserProfile)Session["user"];
+
+            var viewModel = _context.WeeUsers
+                .Where(u => u.ScreenName != currentUser.ScreenName)
+                .ToList();
             return View(viewModel);
         }
     }

@@ -1,16 +1,15 @@
-﻿@using WeeChat.Models
-@model IEnumerable<WeeChat.Models.UserProfile>
+﻿@model IEnumerable<WeeChat.Models.UserProfile>
 @{
     ViewBag.Title = "List";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ListA</h2>
+<h2> Contacts(@Model.Count())</h2>
 
-<ul>
+<ul class="list-group">
     @foreach (var user in Model)
     {
-        <li></li>
+        <li class=" list-group-item">@user.ScreenName</li>
     }
 </ul>
 

@@ -49,9 +49,8 @@ namespace WeeChat.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "Screen Name")]
+        public string ScreenName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -74,7 +73,7 @@ namespace WeeChat.Models
 
 
         [Required]
-        [Display(Name = "ScreenName")]
+        [Display(Name = "Screen Name")]
         public string ScreenName { get; set; }
 
 
