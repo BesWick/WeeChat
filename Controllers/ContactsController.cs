@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using Microsoft.AspNet.Identity;
+using System.Linq;
 using System.Web.Mvc;
 using WeeChat.Models;
 
@@ -17,10 +18,10 @@ namespace WeeChat.Controllers
         public ActionResult List()
         {
 
-            var currentUser = (Models.UserProfile)Session["user"];
+            var currentUser = User.Identity.GetUserId();
 
             var viewModel = _context.WeeUsers
-                .Where(u => u.ScreenName != currentUser.ScreenName)
+                .Where(u => u.UserId != currentUser)
                 .ToList();
             return View(viewModel);
         }

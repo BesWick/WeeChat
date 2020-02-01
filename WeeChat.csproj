@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\ConversationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -178,25 +179,9 @@
     <Compile Include="Migrations\202001300249520_InitialModel.Designer.cs">
       <DependentUpon>202001300249520_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202001310623103_AddingModels.cs" />
-    <Compile Include="Migrations\202001310623103_AddingModels.Designer.cs">
-      <DependentUpon>202001310623103_AddingModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001310700260_connectingusertable.cs" />
-    <Compile Include="Migrations\202001310700260_connectingusertable.Designer.cs">
-      <DependentUpon>202001310700260_connectingusertable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001311642156_newtable.cs" />
-    <Compile Include="Migrations\202001311642156_newtable.Designer.cs">
-      <DependentUpon>202001311642156_newtable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001311758373_changeUserTable.cs" />
-    <Compile Include="Migrations\202001311758373_changeUserTable.Designer.cs">
-      <DependentUpon>202001311758373_changeUserTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002010006568_addingconversationModel.cs" />
-    <Compile Include="Migrations\202002010006568_addingconversationModel.Designer.cs">
-      <DependentUpon>202002010006568_addingconversationModel.cs</DependentUpon>
+    <Compile Include="Migrations\202002012145141_UserConvoModel.cs" />
+    <Compile Include="Migrations\202002012145141_UserConvoModel.Designer.cs">
+      <DependentUpon>202002012145141_UserConvoModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -265,6 +250,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Contacts\List.cshtml" />
+    <Content Include="Views\Conversation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,20 +273,8 @@
     <EmbeddedResource Include="Migrations\202001300249520_InitialModel.resx">
       <DependentUpon>202001300249520_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001310623103_AddingModels.resx">
-      <DependentUpon>202001310623103_AddingModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001310700260_connectingusertable.resx">
-      <DependentUpon>202001310700260_connectingusertable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001311642156_newtable.resx">
-      <DependentUpon>202001311642156_newtable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001311758373_changeUserTable.resx">
-      <DependentUpon>202001311758373_changeUserTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002010006568_addingconversationModel.resx">
-      <DependentUpon>202002010006568_addingconversationModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002012145141_UserConvoModel.resx">
+      <DependentUpon>202002012145141_UserConvoModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

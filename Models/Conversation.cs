@@ -6,7 +6,7 @@ namespace WeeChat.Models
     {
         public Conversation()
         {
-            status = messageStatus.Sent;
+            Status = messageStatus.Sent;
         }
 
         public enum messageStatus
@@ -15,11 +15,11 @@ namespace WeeChat.Models
             Delivered
         }
 
-        public int id { get; set; }
-        public int sender_id { get; set; }
-        public int receiver_id { get; set; }
-        public string message { get; set; }
-        public messageStatus status { get; set; }
-        public DateTime created_at { get; set; }
+        public int Id { get; set; }
+        public string SenderId { get; set; }
+        public string ReceiverId { get; set; }
+        public string Message { get; set; }
+        public messageStatus Status { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }

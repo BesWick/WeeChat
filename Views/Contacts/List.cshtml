@@ -7,10 +7,13 @@
 <h2> Contacts(@Model.Count())</h2>
 
 <div class="list-group">
-    
     @foreach (var user in Model)
     {
-        <a href="#" class="list-group-item list-group-item-action">@user.ScreenName</a>
+        
+            @Html.ActionLink(user.ScreenName, "Index", "Conversation",
+                new {id = user.ScreenName},
+                new {@class ="list-group-item list-group-item-action" })
+        
     }
 </div>
 
