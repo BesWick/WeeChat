@@ -111,3 +111,4 @@ C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.AddingMo
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.connectingusertable.resources
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.newtable.resources
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.changeUserTable.resources
+C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.addingconversationModel.resources
