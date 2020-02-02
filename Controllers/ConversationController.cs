@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNet.Identity;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web.Mvc;
 using WeeChat.Models;
 
@@ -17,10 +15,9 @@ namespace WeeChat.Controllers
         }
 
 
-        public ActionResult Index(string id)
-        {
-            return Content("id = " + id + "CurrentUser:" + User.Identity.GetUserName());
-        }
+
+
+
 
 
 
@@ -28,31 +25,12 @@ namespace WeeChat.Controllers
 
 
         // GET: Conversation
-        public JsonResult Conversation(string contact)
+        public ActionResult Index(string id)
         {
-            if (Session["user"] == null)
-            {
-                return Json(new { status = "error", message = "User is not logged in" });
-            }
+            ViewBag.target = id;
+            ViewBag.user = User.Identity.GetUserName();
 
-            var currentUser = (Models.UserProfile)Session["user"];
-
-            var conversations = new List<Models.Conversation>();
-
-            conversations = _context.Conversations
-                .Where(c => (c.ReceiverId == currentUser.ScreenName
-                             && c.SenderId == contact) ||
-                            (c.ReceiverId == contact
-                             && c.SenderId == currentUser.ScreenName))
-                .OrderBy(c => c.CreatedAt)
-                .ToList();
-
-
-
-            return Json(
-                new { status = "success", data = conversations },
-                JsonRequestBehavior.AllowGet
-            );
+            return View();
         }
     }
 }

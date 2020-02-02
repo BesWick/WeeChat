@@ -108,3 +108,9 @@ C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.pdb
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.InitialModel.resources
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.csproj.GenerateResource.cache
 C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.UserConvoModel.resources
+C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
