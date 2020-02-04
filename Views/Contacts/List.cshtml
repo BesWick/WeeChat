@@ -10,10 +10,30 @@
     @foreach (var user in Model)
     {
         
-            @Html.ActionLink(user.ScreenName, "Index", "Conversation",
-                new {id = user.ScreenName},
-                new {@class ="list-group-item list-group-item-action" })
+        @Html.ActionLink(user.ScreenName, "Index", "Conversation",
+            new {id = user.ScreenName},
+            new {@class ="list-group-item list-group-item-action" })
         
     }
 </div>
 
+
+<script type="text/javascript">
+
+    $(function () {
+
+        // Declare a proxy to reference the hub.
+        var chatHub = $.connection.chatHub;
+
+        registerClientMethods(chatHub);
+
+        // Start Hub
+        $.connection.hub.start().done(function () {
+
+            registerEvents(chatHub)
+
+        });
+
+    });
+
+</script>

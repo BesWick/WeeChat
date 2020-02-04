@@ -190,11 +190,20 @@
     <Compile Include="Migrations\202002012145141_UserConvoModel.Designer.cs">
       <DependentUpon>202002012145141_UserConvoModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002022050331_AddUserStatus.cs" />
+    <Compile Include="Migrations\202002022050331_AddUserStatus.Designer.cs">
+      <DependentUpon>202002022050331_AddUserStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002040135482_ConversationUserModel.cs" />
+    <Compile Include="Migrations\202002040135482_ConversationUserModel.Designer.cs">
+      <DependentUpon>202002040135482_ConversationUserModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ChatHub.cs" />
+    <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\Conversation.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\UserProfile.cs" />
@@ -285,6 +294,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002012145141_UserConvoModel.resx">
       <DependentUpon>202002012145141_UserConvoModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002022050331_AddUserStatus.resx">
+      <DependentUpon>202002022050331_AddUserStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002040135482_ConversationUserModel.resx">
+      <DependentUpon>202002040135482_ConversationUserModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

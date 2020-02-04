@@ -7,6 +7,9 @@ namespace WeeChat.Models
     {
         public DbSet<UserProfile> WeeUsers { get; set; }
         public DbSet<Conversation> Conversations { get; set; }
+
+        public DbSet<Connection> Connections { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

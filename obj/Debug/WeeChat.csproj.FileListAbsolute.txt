@@ -114,3 +114,5 @@ C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.Core.pdb
 C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
 C:\Users\John\source\repos\WeeChat\WeeChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.AddUserStatus.resources
+C:\Users\John\source\repos\WeeChat\WeeChat\obj\Debug\WeeChat.Migrations.ConversationUserModel.resources
