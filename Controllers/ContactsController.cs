@@ -23,6 +23,7 @@ namespace WeeChat.Controllers
             var viewModel = _context.WeeUsers
                 .Where(u => u.UserId != currentUser)
                 .ToList();
+
             return View(viewModel);
         }
     }

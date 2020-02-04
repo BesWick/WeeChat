@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNet.SignalR.Infrastructure;
 
 namespace WeeChat.Models
 {
@@ -22,7 +21,9 @@ namespace WeeChat.Models
 
         public DateTime DateCreated { get; set; }
 
-        public ICollection<Connection> Connection { get; set; }
+        public bool IsConnected { get; set; }
+
+        public ICollection<Connection> Connections { get; set; }
     }
 
 }

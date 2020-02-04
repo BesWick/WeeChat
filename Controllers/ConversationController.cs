@@ -17,14 +17,8 @@ namespace WeeChat.Controllers
 
 
 
-
-
-
-
-
-
-
         // GET: Conversation
+        [Authorize]
         public ActionResult Index(string id)
         {
             ViewBag.target = id;

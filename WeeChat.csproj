@@ -198,6 +198,10 @@
     <Compile Include="Migrations\202002040135482_ConversationUserModel.Designer.cs">
       <DependentUpon>202002040135482_ConversationUserModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002040420137_ConversationUserModel1.cs" />
+    <Compile Include="Migrations\202002040420137_ConversationUserModel1.Designer.cs">
+      <DependentUpon>202002040420137_ConversationUserModel1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -300,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002040135482_ConversationUserModel.resx">
       <DependentUpon>202002040135482_ConversationUserModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002040420137_ConversationUserModel1.resx">
+      <DependentUpon>202002040420137_ConversationUserModel1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

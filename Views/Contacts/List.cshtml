@@ -9,31 +9,26 @@
 <div class="list-group">
     @foreach (var user in Model)
     {
-        
+
         @Html.ActionLink(user.ScreenName, "Index", "Conversation",
-            new {id = user.ScreenName},
-            new {@class ="list-group-item list-group-item-action" })
-        
+            new { id = user.ScreenName },
+            new { @class = "list-group-item list-group-item-action" })
+        <button class="btn btn-primary" id="status">@user.IsConnected</button>
+        <span class="online_icon"></span>
+        <div class active="status-bar"></div>
+
     }
 </div>
 
 
 <script type="text/javascript">
 
-    $(function () {
-
-        // Declare a proxy to reference the hub.
-        var chatHub = $.connection.chatHub;
-
-        registerClientMethods(chatHub);
-
-        // Start Hub
-        $.connection.hub.start().done(function () {
-
-            registerEvents(chatHub)
-
-        });
-
-    });
+    function setContactStatus( contact_id, status ) {
+        if ( user.isConnected ) {
+            contactObj.find('.status-bar').addClass('active');
+        } else {
+            contactObj.find('.status-bar').removeClass('active');
+        }
+    }
 
 </script>
