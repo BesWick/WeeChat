@@ -26,7 +26,7 @@ namespace WeeChat.Models
             var db = _context;
 
             var user = _context.WeeUsers.FirstOrDefault(u => u.ScreenName == who);
-            Clients.All.addNewMessageToPage(name, message);
+            //Clients.All.addNewMessageToPage(name, message);
             if (user == null)
             {
 
@@ -50,10 +50,10 @@ namespace WeeChat.Models
                     Clients.All.showErrorMessage("Could not find that user.");
                     foreach (var connection in user.Connections)
                     {
-                        // Clients.Client(connection.ConnectionID)
-                        //  .addNewMessageToPage(who, message);
+                        Clients.Client(connection.ConnectionID)
+                         .addNewMessageToPage(name, message);
                     }
-                    // Clients.Caller.addNewMessageToPage(name, message);
+                    Clients.Caller.addNewMessageToPage(name, message);
 
                 }
             }
@@ -100,7 +100,22 @@ namespace WeeChat.Models
 
         public override Task OnDisconnected(bool stopCalled)
         {
+            var db = _context;
+            var name = Context.User.Identity.Name;
 
+            //User Model
+            var user = db.WeeUsers
+                .Include(u => u.Connections)
+                .SingleOrDefault(u => u.ScreenName == name);
+
+            user.IsConnected = false;
+
+            //Connections Model
+            var connection = db.Connections.Find(Context.ConnectionId);
+            connection.Connected = false;
+
+
+            db.SaveChanges();
 
 
 

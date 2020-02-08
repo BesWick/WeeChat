@@ -2,7 +2,7 @@
     background-image: url('mountain.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color:white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,11 +23,12 @@ input,
 select,
 textarea {
     max-width: 280px;
+    color:black ;
 }
 
 /* Override bootsrap*/
 .navbar-inverse {
-    background-color: color(darkcyan)#;
+    background-color: black;
     border-color: darkcyan;
 }
 
@@ -38,3 +39,4 @@ textarea {
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
+
