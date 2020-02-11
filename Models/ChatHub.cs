@@ -54,7 +54,6 @@ namespace WeeChat.Models
                          .addNewMessageToPage(name, message);
                     }
                     Clients.Caller.addNewMessageToPage(name, message);
-
                 }
             }
 
@@ -63,7 +62,7 @@ namespace WeeChat.Models
         public override Task OnConnected()
         {
             var name = Context.User.Identity.Name;
-
+            Clients.All.setOnline(name);
 
 
             var db = _context;
@@ -86,6 +85,7 @@ namespace WeeChat.Models
             user.IsConnected = true;
 
 
+
             user.Connections.Add(new Connection
             {
                 ConnectionID = Context.ConnectionId,
@@ -100,8 +100,10 @@ namespace WeeChat.Models
 
         public override Task OnDisconnected(bool stopCalled)
         {
+
             var db = _context;
             var name = Context.User.Identity.Name;
+            //Clients.All.setOffline(name);
 
             //User Model
             var user = db.WeeUsers

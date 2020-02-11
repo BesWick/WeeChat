@@ -1,8 +1,9 @@
 ﻿body {
+    padding-top: 65px;
     background-image: url('mountain.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    color:white;
+    color: white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -39,4 +40,20 @@ textarea {
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
+
+.list-group {
+    max-width: 280px;
+    color: black;
+}
+
+.badge {
+    padding: 5px 4px;
+    background-color: red;
+}
+
+.active {
+    background-color: #468847;
+}
+
+
 
