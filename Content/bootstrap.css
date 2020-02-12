@@ -1148,7 +1148,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+ 
 }
 .sr-only {
   position: absolute;
@@ -2475,7 +2475,7 @@ th {
 .table-hover > tbody > tr.success:hover > th {
   background-color: #d0e9c6;
 }
-.table > thead > tr > td.info,
+.table > thead > tr > td.fo,
 .table > tbody > tr > td.info,
 .table > tfoot > tr > td.info,
 .table > thead > tr > th.info,
