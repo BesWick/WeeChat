@@ -11,6 +11,7 @@
     <button class="btn btn-primary" id="sendmessage">Send</button>
     <input type="hidden" id="displayname" />
     <ul id="discussion"></ul>
+    <div id ="status"></div>
 </div>
 @section scripts {
     <!--Script references. -->
@@ -30,12 +31,24 @@
                 $('#discussion').append('<li><strong>' + htmlEncode(name)
                     + '</strong>: ' + htmlEncode(message) + '</li>');
             };
+
+            chat.client.SayWhoIsTyping = function(name,html) {
+                $('#status').html('<em>' + htmlEncode(html) + ' is typing ...</li>');
+                setInterval(function() { $('#status').html(''); }, 5000);
+            }
+
+
             // Set initial focus to message input box.
             $('#message').focus();
 
 
             // Start the connection.
             $.connection.hub.start().done(function () {
+                $('#message').keydown(function() {
+                    var encodedName = '@(ViewBag.user)';
+                    chat.server.isTyping('@(ViewBag.target)',encodedName);
+                });
+
                 $('#sendmessage').click(function () {
                     // Call the Send method on the hub.
                     chat.server.send('@(ViewBag.target)', $('#message').val());

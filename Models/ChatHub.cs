@@ -59,6 +59,17 @@ namespace WeeChat.Models
 
         }
 
+        public void IsTyping(string target, string html)
+        {
+            SayWhoIsTyping(target, html);
+        }
+
+        private void SayWhoIsTyping(string target, string html)
+        {
+            var name = Context.User.Identity.GetUserName();
+            Clients.User(target).sayWhoIsTyping(name, html);
+        }
+
         public override Task OnConnected()
         {
             var name = Context.User.Identity.Name;
