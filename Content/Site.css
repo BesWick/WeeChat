@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 280px;
+    padding-top: 65px;
     background-image: url('mountain.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,6 +67,7 @@ textarea {
 }
 
 .cover-heading {
+    padding-top: 280px;
     font-family: "Great Vibes", serif;
     font-size: 100px;
     transform: rotate(-6deg);
