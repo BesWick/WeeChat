@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="WeeChat2020" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\John\\source\\repos\\WeeChat\\WeeChat\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\John\\source\\repos\\WeeChat\\WeeChat\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="MyDbConnection-Web.config Connection String" description="" value="Data Source=tcp:weechat20200218034127dbserver.database.windows.net,1433;Initial Catalog=WeeChat20200218034127_db;User Id=sqladmin@weechat20200218034127dbserver;Password=Dragonrules1!" tags="" />
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:weechat20200218034127dbserver.database.windows.net,1433;Initial Catalog=WeeChat20200218034127_db;User Id=sqladmin@weechat20200218034127dbserver;Password=Dragonrules1!" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\John\\source\\repos\\WeeChat\\WeeChat\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
